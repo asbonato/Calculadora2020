@@ -1,4 +1,4 @@
-package br.usjt.ads20.calculadoramvc;
+package br.usjt.ads20.calculadoramvp;
 
 import org.junit.Test;
 

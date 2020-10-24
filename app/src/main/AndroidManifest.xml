@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.usjt.ads20.calculadoramvc">
+    package="br.usjt.ads20.calculadoramvp">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".controller.MainActivity">
+        <activity android:name="br.usjt.ads20.calculadoramvp.view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

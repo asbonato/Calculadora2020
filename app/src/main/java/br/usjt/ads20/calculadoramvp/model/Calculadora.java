@@ -1,4 +1,4 @@
-package br.usjt.ads20.calculadoramvc.model;
+package br.usjt.ads20.calculadoramvp.model;
 
 public class Calculadora {
     double valor1, valor2, resultado;
