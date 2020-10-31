@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".controller.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable name="viewModel"
+            type="br.usjt.ads20.calculadoramvvm.viewmodel.MainViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="br.usjt.ads20.calculadoramvvm.view.MainActivity">
     <TextView
         android:id="@+id/igual"
         android:layout_width="wrap_content"
@@ -20,6 +27,7 @@
 
     <EditText
         android:id="@+id/valor1"
+        android:text="@={viewModel.valor1}"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -33,6 +41,7 @@
 
     <EditText
         android:id="@+id/operador"
+        android:text="@={viewModel.operador}"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -46,6 +55,7 @@
 
     <EditText
         android:id="@+id/valor2"
+        android:text="@={viewModel.valor2}"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -59,6 +69,7 @@
 
     <EditText
         android:id="@+id/resultado"
+        android:text="@={viewModel.resultado}"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -77,9 +88,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:onClick="calcular"
+        android:onClick="@{() -> viewModel.calcular()}"
         android:text="@string/botao"
         app:layout_constraintStart_toEndOf="@+id/resultado"
         app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

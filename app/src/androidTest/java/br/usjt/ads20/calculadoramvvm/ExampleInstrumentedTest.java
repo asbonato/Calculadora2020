@@ -1,4 +1,4 @@
-package br.usjt.ads20.calculadoramvc;
+package br.usjt.ads20.calculadoramvvm;
 
 import android.content.Context;
 

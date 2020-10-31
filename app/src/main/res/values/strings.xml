@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CalculadoraMVC</string>
+    <string name="app_name">CalculadoraMVVM</string>
     <string name="hint_valor1">valor</string>
     <string name="hint_valor2">valor</string>
     <string name="hint_operador">op</string>

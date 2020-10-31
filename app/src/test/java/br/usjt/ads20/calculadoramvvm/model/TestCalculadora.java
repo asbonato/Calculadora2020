@@ -1,8 +1,8 @@
-package br.usjt.ads20.calculadoramvc;
+package br.usjt.ads20.calculadoramvvm.model;
 
 import org.junit.Test;
 
-import br.usjt.ads20.calculadoramvc.model.Calculadora;
+import br.usjt.ads20.calculadoramvvm.model.Calculadora;
 
 import static org.junit.Assert.assertEquals;
 
